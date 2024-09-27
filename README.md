@@ -1,6 +1,6 @@
 # ESX ShowPlate Script
 
-Ein FiveM-Skript auf ESX-Basis, das es Fahrzeugbesitzern ermöglicht, das Kennzeichen ihres Fahrzeugs über das `ox_target`-System anzuzeigen.
+Ein **Open-Source** FiveM-Skript auf ESX-Basis, das es Fahrzeugbesitzern ermöglicht, das Kennzeichen ihres Fahrzeugs über das `ox_target`-System anzuzeigen. Das Skript ist frei verfügbar und kann von jedem genutzt, modifiziert und verteilt werden.
 
 ## Inhaltsverzeichnis
 
@@ -16,6 +16,8 @@ Ein FiveM-Skript auf ESX-Basis, das es Fahrzeugbesitzern ermöglicht, das Kennze
 ## Beschreibung
 
 Das **ESX ShowPlate Script** erlaubt es Spielern, an ihr eigenes Fahrzeug heranzutreten und über das `ox_target`-System eine Interaktion zu nutzen, um das Kennzeichen ihres Fahrzeugs per Benachrichtigung angezeigt zu bekommen. Diese Funktion steht ausschließlich dem Fahrzeugbesitzer zur Verfügung, wodurch die Privatsphäre gewahrt und realistisches Rollenspiel gefördert wird.
+
+**Hinweis:** Dieses Skript ist Open Source und steht unter der [MIT-Lizenz](#lizenz). Jeder darf es frei nutzen, modifizieren und verteilen.
 
 ## Voraussetzungen
 
@@ -65,23 +67,16 @@ Das **ESX ShowPlate Script** erlaubt es Spielern, an ihr eigenes Fahrzeug heranz
 
 ## Konfiguration
 
-Das Skript ist standardmäßig einsatzbereit. Bei Bedarf kannst du Anpassungen in den Skripten vornehmen:
+Das Skript enthält eine `config.lua` Datei, in der du verschiedene Einstellungen anpassen kannst:
 
-- **Icons anpassen:**
-
-  Im `client.lua` kannst du das Icon ändern, das im `ox_target`-Menü angezeigt wird. Standardmäßig ist es `fa-solid fa-car`.
-
-  ```lua
-  icon = 'fa-solid fa-car',
-  ```
-
-- **Interaktionsdistanz:**
-
-  Passe die Distanz an, in der die Interaktion verfügbar sein soll:
-
-  ```lua
-  distance = 2.5,
-  ```
+- **Config.InteractionDistance**: Die Distanz, in der die Interaktion verfügbar ist.
+- **Config.InteractionIcon**: Das Icon, das im `ox_target`-Menü angezeigt wird.
+- **Config.InteractionLabel**: Der Text der Interaktionsoption.
+- **Config.OwnerMessage**: Die Nachricht, die angezeigt wird, wenn der Spieler der Besitzer ist.
+- **Config.NotOwnerMessage**: Die Nachricht, die angezeigt wird, wenn der Spieler nicht der Besitzer ist.
+- **Config.VehicleNotFoundMessage**: Die Nachricht, wenn das Fahrzeug nicht in der Datenbank gefunden wird.
+- **Config.EnableOwnershipCheck**: Aktiviert (`true`) oder deaktiviert (`false`) die Besitzüberprüfung.
+- **Config.EnableDebugging**: Aktiviert (`true`) oder deaktiviert (`false`) Debug-Ausgaben in der Konsole.
 
 ## Nutzung
 
@@ -119,10 +114,14 @@ Das Skript ist standardmäßig einsatzbereit. Bei Bedarf kannst du Anpassungen i
 
 Dieses Projekt ist unter der **MIT-Lizenz** lizenziert. Siehe die [LICENSE](LICENSE)-Datei für weitere Details.
 
+**Open Source:** Dieses Skript ist Open Source und darf von jedem frei genutzt, modifiziert und verteilt werden.
+
 ---
 
-Solltest du Fragen oder Probleme haben, zögere nicht, ein Issue zu eröffnen oder Kontakt aufzunehmen.
+Solltest du Fragen oder Probleme haben, zögere nicht, Kontakt über Discord mit mir aufzunehmen aufzunehmen "quwenji".
 
 ---
 
 **Viel Spaß beim Spielen und gutes Roleplay!**
+
+---
